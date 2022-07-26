@@ -1,0 +1,67 @@
+.task {
+  width: 100%;
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.task button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finishButton {
+  color: var(--purple-dark);
+}
+
+.finishButton:hover {
+  color: var(--purple);
+}
+
+.notFinishButton {
+  color: var(--blue);
+}
+
+.notFinishButton:hover {
+  color: var(--blue-dark);
+}
+
+.task p {
+  margin-left: 12px;
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: var(--gray-100);
+}
+
+.taskFinished {
+  color: var(--gray-300) !important; 
+  text-decoration-line: line-through;
+}
+
+.textAndTrash {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.trashButton {
+  color: var(--gray-300);
+  border-radius: 4px;
+}
+
+.trashButton:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}

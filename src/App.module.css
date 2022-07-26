@@ -1,0 +1,145 @@
+.container {
+  max-width: 46rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: -1.75rem;
+}
+
+.container form input {
+  width: 100%;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  background: var(--gray-500);
+  border: 1px solid #0d0d0d;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  line-height: 140%;
+  color: var(--gray-100);
+}
+
+.container form input::placeholder {
+  color: var(--gray-300);
+}
+
+.container form button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-dark);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--gray-100);
+
+  transition: background-color 0.1s;
+}
+
+.container form button:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.container form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.container form button span {
+  font-size: 0.875rem;
+  line-height: 140%;
+  font-weight: 700;
+
+  display: block;
+  margin-right: 0.5rem;
+}
+
+.tasksInfos {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.createdTasks {
+  display: flex;
+  align-items: center;
+}
+
+.createdTasks h2 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: var(--blue);
+}
+
+.finishedTasks {
+  display: flex;
+  align-items: center;
+}
+
+.finishedTasks h2 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: var(--purple);
+}
+
+.quantityCircle {
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.125rem 0.5rem;
+  background: var(--gray-400);
+  border-radius: 10rem;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: var(--gray-200);
+}
+
+.taskList {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.emptyList {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.emptyList h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: var(--gray-300);
+  text-align: center;
+}
+
+.emptyList h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--gray-300);
+  text-align: center;
+}
